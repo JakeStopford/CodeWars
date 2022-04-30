@@ -4,12 +4,7 @@
     {
         public static bool Solution(string str, string ending)
         {
-            if (str.EndsWith(ending))
-            { 
-                return true;
-            }
-            
-            return false;
+            return str.EndsWith(ending);
         }
     }
 }
