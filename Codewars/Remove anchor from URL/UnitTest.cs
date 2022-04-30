@@ -3,14 +3,14 @@ using NUnit.Framework;
 
 namespace Codewars
 {
-    public class Tests
+    public class RemoveUrlAnchorTests
     {
         [Test]
         public void SampleTests()
         {
-            Assert.AreEqual("www.codewars.com", Kata.RemoveUrlAnchor("www.codewars.com#about"));
-            Assert.AreEqual("www.codewars.com/katas/?page=1", Kata.RemoveUrlAnchor("www.codewars.com/katas/?page=1"));
-            Assert.AreEqual("www.codewars.com/katas/", Kata.RemoveUrlAnchor("www.codewars.com/katas/"));
+            Assert.AreEqual("www.codewars.com", RemoveUrlAnchorKata.RemoveUrlAnchor("www.codewars.com#about"));
+            Assert.AreEqual("www.codewars.com/katas/?page=1", RemoveUrlAnchorKata.RemoveUrlAnchor("www.codewars.com/katas/?page=1"));
+            Assert.AreEqual("www.codewars.com/katas/", RemoveUrlAnchorKata.RemoveUrlAnchor("www.codewars.com/katas/"));
         }
     }
 }
